@@ -1,5 +1,4 @@
 export type Uzivatel={
-  prihlaseny:boolean
   id: number
   spolocnost:string
   ulica: string
@@ -10,6 +9,7 @@ export type Uzivatel={
   icdph: string,
   email: string
 }
+export type UzivatelPrihlaseny=boolean
 
 export type Objednavky={
   id:number
@@ -30,4 +30,14 @@ export type Kosik={
   fotografiaMala:string
   kodProduktu:number
   sklad:string
+}
+
+export type Produkty={
+  id:number,
+  typProduktu: 'prislusenstvo' | 'inyTyp'
+  nazov: string
+  nazovUrl: string
+  fotografiaMala: string
+  jeAkcia: boolean
+  novinka: boolean
 }
